@@ -18,7 +18,6 @@ namespace Number2Text
             if (div == 0 || div >= 5 && div <= 9) return "рублей";
             if (div == 1) return "рубль";
             if (div >= 2 && div <= 4 && div10 != 1) return "рубля";
-
             return "";
         }
     }

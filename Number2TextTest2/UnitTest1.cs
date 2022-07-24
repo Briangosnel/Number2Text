@@ -51,7 +51,25 @@ namespace Number2TextTest2
         {
             Assert.AreEqual("рублей", new Number2Text.RoubleCases().ConvertPadej(1011));
         }
+    }
 
-
+    [TestClass]
+    public class UnitTest2
+    {
+        [TestMethod]
+        public void TestMethodConvert1()
+        {
+            Assert.AreEqual("восемьдес€т п€ть рублей", new Number2Text.Currency().ValueWithCurrency(85));
+        }
+        [TestMethod]
+        public void TestMethodConvert2()
+        {
+            Assert.AreEqual("тридцать п€ть миллионов сто семьдес€т одна тыс€ча триста семнадцать рублей", new Number2Text.Currency().ValueWithCurrency(35171317));
+        }
+        [TestMethod]
+        public void TestMethodConvert3()
+        {
+            Assert.AreEqual("тридцать п€ть миллионов сто семьдес€т одна тыс€ча триста семнадцать рублей", new Number2Text.Currency().ValueWithCurrency(9));
+        }
     }
 }

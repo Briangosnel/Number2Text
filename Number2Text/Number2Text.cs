@@ -97,7 +97,7 @@ namespace Number2Text
             if (value == 19) return "девятнадцать";
             if (value >= 20 && value <= 39)
             {
-                if (value % 10 == 0) return Convert1(div10) + "цать";
+                if (value % 10 == 0) return Convert1(div10) + "дцать";
                 return Convert1(div10) + "дцать " + Convert1(div);
             }
             if (value >= 40 && value <= 49)
